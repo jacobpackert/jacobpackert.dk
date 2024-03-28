@@ -3,9 +3,13 @@
     --peach-quartz: #f5b895;
     --peach-quartz-dark: #df9d76;
 
-    --moonlit-asteroid-dark: #0F2027;
-    --moonlit-asteroid: #203A43;
     --nightsky-dark: #2C5364;
+    --moonlit-asteroid: #203A43;
+    --moonlit-asteroid-dark: #0F2027;
+    --moonlit-asteroid-dark-transparent: #0f202744;
+
+    --white: #f3f3f3;
+    --black-transparent: #00000044;
 }
 
 @font-face {
@@ -33,6 +37,12 @@
   font-family: 'PlayfairDisplay';
   src: url(/fonts/PlayfairDisplay-Bold.ttf);
   font-weight: 700;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url(/fonts/PlayfairDisplay-Black.ttf);
+  font-weight: 900;
 }
 
 html {
@@ -66,9 +76,17 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 90%;
+  max-width: 95%;
+  @media screen and (min-width: 600px) {
+    max-width: 90%;
+  }
   padding: 1rem;
   line-height: 1.5;
+}
+
+footer {
+    font-size: 0.75rem;
+    margin-top: 2rem;
 }
 
 * {
@@ -77,9 +95,12 @@ body {
 
 h1 {
   margin: 1rem 0;
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 3.2rem;
   @media screen and (min-width: 600px) {
     font-size: 4rem;
+    line-height: 4.2rem;
+
     
   }
   font-family: 'PlayfairDisplay', serif;
@@ -87,15 +108,18 @@ h1 {
 }
 
 a {
-  color: blue;
+  color: #0000ff;
+  
   &:hover {
-    color: indigo;
-  }
+    color: #0000ffaa;
+  };
 
   @media (prefers-color-scheme: dark) {
-    color: green;
+
+    color: #0babe5;
+
     &:hover {
-      color: blue;
+      color: #0babe5aa;
     }
-  }
+  };
 }
