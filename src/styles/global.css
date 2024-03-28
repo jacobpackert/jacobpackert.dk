@@ -1,10 +1,66 @@
+:root {
+    --cornhusk: #f3d5ad;
+    --peach-quartz: #f5b895;
+    --peach-quartz-dark: #df9d76;
+
+    --moonlit-asteroid-dark: #0F2027;
+    --moonlit-asteroid: #203A43;
+    --nightsky-dark: #2C5364;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(/fonts/Inter-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(/fonts/Inter-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(/fonts/Inter-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url(/fonts/PlayfairDisplay-Bold.ttf);
+  font-weight: 700;
+}
+
 html {
-  background-color: #f1f5f9;
+  min-height: 100%;
+
+  color: #343434ed;
+  background: linear-gradient(180deg, 
+    var(--cornhusk) 40%,
+    var(--peach-quartz) 80%,
+    var(--peach-quartz-dark) 100%
+  );
 
   @media (prefers-color-scheme: dark) {
-    background-color: #1a202c;
-    color: #e2e8f0;
-  }
+
+  color: #cdcdcdc2;
+
+    background: linear-gradient(180deg, 
+    var(--nightsky-dark) 0%,
+    var(--moonlit-asteroid) 40%,
+    var(--moonlit-asteroid-dark) 80%,
+    black 100%
+  );
+
+    
+  };
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 body {
@@ -21,7 +77,13 @@ body {
 
 h1 {
   margin: 1rem 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  @media screen and (min-width: 600px) {
+    font-size: 4rem;
+    
+  }
+  font-family: 'PlayfairDisplay', serif;
+  font-weight: 500;
 }
 
 a {
