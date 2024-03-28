@@ -1,0 +1,39 @@
+html {
+  background-color: #f1f5f9;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #1a202c;
+    color: #e2e8f0;
+  }
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 90%;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+a {
+  color: blue;
+  &:hover {
+    color: indigo;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: green;
+    &:hover {
+      color: blue;
+    }
+  }
+}
