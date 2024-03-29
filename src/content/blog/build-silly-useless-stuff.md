@@ -34,7 +34,9 @@ To get today’s lunch:
 ```zsh
 lunch
 ```
+
 To get the whole week:
+
 ```zsh
 lunch --week
 ```
@@ -53,7 +55,7 @@ So build your silly little thing and show it to the world.
 
 I’m so grateful for the good people writing free tutorials. Teaching any subject is difficult, so I’m impressed there’s so much good content for learning to code out there. But it would be truly next-level if more guides were also a little fun or silly. If you know of any, please leave a comment with a link!
 
-I think I would pay for a service where I could write in my idea for a stupid thing, plus the technology I want to learn, and then get steps to build that from someone who knows how. Wouldn’t that be amazing? A https://silly-tutorials.school or something like that!
+I think I would pay for a service where I could write in my idea for a stupid thing, plus the technology I want to learn, and then get steps to build that from someone who knows how. Wouldn’t that be amazing? A <https://silly-tutorials.school> or something like that!
 
 Go build something silly. You’ll be more motivated to learn something while doing it and you’ll have a fun thing to show for it afterwards.
 
