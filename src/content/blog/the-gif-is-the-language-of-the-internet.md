@@ -3,11 +3,6 @@ title: Protect the GIF - it is the language of the internet
 date: "2020-05-16"
 description: "We need a decentralised, open source Giphy with support for global content."
 ---
-import { Image } from 'astro:assets'
-import giphySearchFriday from '../../assets/giphy-search-friday.gif'
-import captainAmerica from '../../assets/captain-america.gif'
-import olsenbanden from '../../assets/olsenbanden.gif'
-import olsenbanden2 from '../../assets/olsenbanden2.gif'
 
 We use GIFs everywhere these days. From being an obscure part of meme culture, they are now a part of every main communication channel.
 
@@ -23,7 +18,7 @@ Giphy is by far the biggest GIF hub on the internet, worth enough for Facebook -
 
 Giphy has been trusted by so many products as an easy way to support GIFs in their apps or social platforms. You search for keywords like `thank you` or `sad` or `friday`, and Giphy will bring up thousands of options ready for you to send away to your friends or coworkers.
 
-<Image src={giphySearchFriday} alt="Giphy search for the keyword 'friday'."/>
+![Giphy search for the keyword 'friday'](../../assets/giphy-search-friday.gif)
 
 Tap the GIF you want and it will sent as a message. It's so easy. Giphy has social features built in to their platform (you can create an account and make a list of your favorite GIFs), but it's mainly a _utility_ powering other apps with a comprehensive library of GIF's, a search engine juiced up on metadata, and a nice [API and SDK](https://developers.giphy.com/) to implement in to your own product.
 
@@ -43,7 +38,7 @@ The GIF is essentially just a file format, and everyone can produce one with a b
 
 But the GIF is increasingly something we _consume_, a common reference of internet culture - often based on popular TV shows or movies.
 
-<Image src={captainAmerica} alt="I understood that reference gif from Captain America."/>
+![I understood that reference gif from Captain America](./captain-america.gif)
 
 GIF's often require you to be in on the meme and to understand a vast, growing set of  references to popular cultures or internet moments.
 
@@ -66,7 +61,7 @@ Even worse, I can't bring up any results that are native to my local country's p
 
 The Danish Broadcasting Corporation (DR) is trying to add [GIFs from their productions](https://giphy.com/danmarksradio/) to Giphy. Same goes for the [Danish Film Institute](https://giphy.com/filminstituttet). But the amount of GIF's is very small compared to how big the cultural legacy actually is.
 
-<Image src={olsenbanden} alt="GIF from the Olsen Banden Danish movie series."/>
+![GIF from the Olsen Banden Danish movie series](./olsenbanden.gif)
 
 Danish Internet culture has a lot of memes based in popular culture, being spread either as still image or as short video clips stored on Youtube. But there should be a way to do the same for GIFs. It's as if a part of our vocabulary is missing from the internet.
 
@@ -88,4 +83,4 @@ GIFs are a part of the language of the Internet, and we need to embrace and prot
 
 And I would just personally love to get more awesome GIFs from Olsen Banden:
 
-<Image src={olsenbanden2} alt="A GIF from the movie Olsen Banden, two men waving with flags in celebration."/>
+![A GIF from the movie Olsen Banden, two men waving with flags in celebration](./olsenbanden2.gif)
