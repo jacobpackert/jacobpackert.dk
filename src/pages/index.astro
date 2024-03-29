@@ -1,76 +1,54 @@
 ---
-import "../styles/global.css";
 import Contact from "../components/Contact.astro";
-import Footer from "../components/Footer.astro";
+
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <style>
-      p {
-        font-size: 1.2rem;
-        @media (min-width: 600px) {
-          font-size: 1.5rem;
-        }
-      }
-    </style>
-    <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>"
-    />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta
-      name="theme-color"
-      content="#F3D5AD"
-      media="(prefers-color-scheme: light)"
-    />
-    <meta
-      name="theme-color"
-      content="#2C5364"
-      media="(prefers-color-scheme: dark)"
-    />
-    <title>Jacob Packert</title>
-  </head>
-  <body>
-    <h1>Hi! I'm Jacob Packert ✨</h1>
+<style>
+  p {
+    font-size: 1.2rem;
+    @media (min-width: 600px) {
+      font-size: 1.5rem;
+    }
+  }
+</style>
 
-    <section>
-      <p>I like the tech, urbanism, music and code.</p>
-      <p>
-        I live in lovely
-        <a
-          href="https://medium.com/@jacobpackert/why-bicycling-in-copenhagen-is-so-fantastic-ac5e56349df7"
-          target="_blank"
-          rel="noopener noreferrer">Copenhagen</a
-        >, Denmark.
-      </p>
-      <p>
-        I work as a Lead Engineer at <a
-          href="https://lego.com"
-          target="_blank"
-          rel="noopener noreferrer">The LEGO Group</a
-        >, building cool digital products for grown-ups.
-      </p>
-      <p>
-        I used to work with politics, then I worked with marketing. Some would
-        say that's the same thing.
-      </p>
-      <p>
-        Now I write code for a living and build products and websites. For work
-        and for fun.
-      </p>
-      <p>
-        I love JavaScript, TypeScript, Node.js and React, and I've built a few
-        apps with React Native.
-      </p>
-      <p>
-        I occassionally dabble in Python, and I'm also dipping my toes into
-        languages like .NET, Swift and Rust.
-      </p>
-    </section>
-    <Contact />
-    <Footer />
-  </body>
-</html>
+<BaseLayout title="Jacob Packert">
+  <h1>Hi! I'm Jacob Packert ✨</h1>
+
+  <section>
+    <p>I like the tech, urbanism, music and code.</p>
+    <p>
+      I live in lovely
+      <a
+        href="https://medium.com/@jacobpackert/why-bicycling-in-copenhagen-is-so-fantastic-ac5e56349df7"
+        target="_blank"
+        rel="noopener noreferrer">Copenhagen</a
+      >, Denmark.
+    </p>
+    <p>
+      I work as a Lead Engineer at <a
+        href="https://lego.com"
+        target="_blank"
+        rel="noopener noreferrer">The LEGO Group</a
+      >, building cool digital products for grown-ups.
+    </p>
+    <p>
+      I used to work with politics, then I worked with marketing. Some would say
+      that's the same thing.
+    </p>
+    <p>
+      Now I write code for a living and build products and websites. For work
+      and for fun.
+    </p>
+    <p>
+      I love JavaScript, TypeScript, Node.js and React, and I've built a few
+      apps with React Native.
+    </p>
+    <p>
+      I occassionally dabble in Python, and I'm also dipping my toes into
+      languages like .NET, Swift and Rust.
+    </p>
+  </section>
+  <Contact />
+</BaseLayout>
