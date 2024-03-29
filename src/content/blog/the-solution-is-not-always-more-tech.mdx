@@ -4,7 +4,11 @@ date: "2020-03-02"
 description: "Sometimes, technology won’t fix it. We should always focus on the problem, not the tech."
 ---
 
-![Coffee](../../assets/0*DhlgH5_-e1vlJ66R.jpg)
+import { Picture } from 'astro:assets'
+import coffee from '../../assets/0*DhlgH5_-e1vlJ66R.jpg'
+import giphySearchFriday from '../../assets/giphy-search-friday.gif'
+
+<Picture src={coffee} alt="Coffee." densities={[1.5, 2]} />
 
 It was the summer of 2018. Denmark was playing Australia. Eriksen scored a dream of a goal. But wait, what’s going on?
 

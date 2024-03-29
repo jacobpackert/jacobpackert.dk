@@ -80,7 +80,7 @@ body {
   width: 100%;
   max-width: 95%;
   @media screen and (min-width: 600px) {
-    max-width: 90%;
+    max-width: 1000px;
   }
   padding: 1rem;
   line-height: 1.5;
@@ -124,4 +124,10 @@ a {
       color: #0babe5aa;
     }
   };
+}
+
+article > picture, img {
+  width: 99%;
+  height: auto;
+  margin: 1rem 0;
 }
