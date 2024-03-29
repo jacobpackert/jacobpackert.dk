@@ -5,7 +5,9 @@ description: "We need a decentralised, open source Giphy with support for global
 ---
 import { Picture } from 'astro:assets'
 import giphySearchFriday from '../../assets/giphy-search-friday.gif'
-
+import captainAmerica from '../../assets/captain-america.gif'
+import olsenbanden from '../../assets/olsenbanden.gif'
+import olsenbanden2 from '../../assets/olsenbanden2.gif'
 
 We use GIFs everywhere these days. From being an obscure part of meme culture, they are now a part of every main communication channel.
 
@@ -41,7 +43,7 @@ The GIF is essentially just a file format, and everyone can produce one with a b
 
 But the GIF is increasingly something we _consume_, a common reference of internet culture - often based on popular TV shows or movies.
 
-![I understood that reference gif from Captain America](/images/captain-america.gif)
+<Picture src={captainAmerica} alt="I understood that reference gif from Captain America" densities={[1.5, 2]} />
 
 GIF's often require you to be in on the meme and to understand a vast, growing set of  references to popular cultures or internet moments.
 
@@ -64,7 +66,7 @@ Even worse, I can't bring up any results that are native to my local country's p
 
 The Danish Broadcasting Corporation (DR) is trying to add [GIFs from their productions](https://giphy.com/danmarksradio/) to Giphy. Same goes for the [Danish Film Institute](https://giphy.com/filminstituttet). But the amount of GIF's is very small compared to how big the cultural legacy actually is.
 
-![GIF from the Olsen Banden Danish movie series](/images/olsenbanden.gif)
+<Picture src={olsenbanden} alt="GIF from the Olsen Banden Danish movie series" densities={[1.5, 2]} />
 
 Danish Internet culture has a lot of memes based in popular culture, being spread either as still image or as short video clips stored on Youtube. But there should be a way to do the same for GIFs. It's as if a part of our vocabulary is missing from the internet.
 
@@ -86,4 +88,4 @@ GIFs are a part of the language of the Internet, and we need to embrace and prot
 
 And I would just personally love to get more awesome GIFs from Olsen Banden:
 
-![A GIF from the movie Olsen Banden, two men waving with flags in celebration](/images/olsenbanden2.gif)
+<Picture src={olsenbanden2} alt="A GIF from the movie Olsen Banden, two men waving with flags in celebration" densities={[1.5, 2]} />
