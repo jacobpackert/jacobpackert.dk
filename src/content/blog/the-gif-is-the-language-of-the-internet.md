@@ -38,7 +38,7 @@ The GIF is essentially just a file format, and everyone can produce one with a b
 
 But the GIF is increasingly something we _consume_, a common reference of internet culture - often based on popular TV shows or movies.
 
-![I understood that reference gif from Captain America](./captain-america.gif)
+![I understood that reference gif from Captain America](../../assets/captain-america.gif)
 
 GIF's often require you to be in on the meme and to understand a vast, growing set of  references to popular cultures or internet moments.
 
@@ -61,7 +61,7 @@ Even worse, I can't bring up any results that are native to my local country's p
 
 The Danish Broadcasting Corporation (DR) is trying to add [GIFs from their productions](https://giphy.com/danmarksradio/) to Giphy. Same goes for the [Danish Film Institute](https://giphy.com/filminstituttet). But the amount of GIF's is very small compared to how big the cultural legacy actually is.
 
-![GIF from the Olsen Banden Danish movie series](./olsenbanden.gif)
+![GIF from the Olsen Banden Danish movie series](../../assets/olsenbanden.gif)
 
 Danish Internet culture has a lot of memes based in popular culture, being spread either as still image or as short video clips stored on Youtube. But there should be a way to do the same for GIFs. It's as if a part of our vocabulary is missing from the internet.
 
@@ -83,4 +83,4 @@ GIFs are a part of the language of the Internet, and we need to embrace and prot
 
 And I would just personally love to get more awesome GIFs from Olsen Banden:
 
-![A GIF from the movie Olsen Banden, two men waving with flags in celebration](./olsenbanden2.gif)
+![A GIF from the movie Olsen Banden, two men waving with flags in celebration](../../assets/olsenbanden2.gif)
