@@ -1,5 +1,5 @@
 ---
-import "../../styles/global.css";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
 import { getCollection } from "astro:content";
 
@@ -18,34 +18,11 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>"
-    />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta
-      name="theme-color"
-      content="#F3D5AD"
-      media="(prefers-color-scheme: light)"
-    />
-    <meta
-      name="theme-color"
-      content="#2C5364"
-      media="(prefers-color-scheme: dark)"
-    />
-    <title>Jacob Packert</title>
-    <title>{entry.data.title}</title>
-  </head>
-  <body>
-    <article>
-      <h1>{entry.data.title}</h1>
-      <p>{entry.data.date}</p>
-      <p>{entry.data.description}</p>
-      <Content />
-    </article>
-  </body>
-</html>
+<BaseLayout title={entry.data.title}>
+  <article>
+    <h1>{entry.data.title}</h1>
+    <p>{entry.data.date}</p>
+    <p>{entry.data.description}</p>
+    <Content />
+  </article>
+</BaseLayout>
