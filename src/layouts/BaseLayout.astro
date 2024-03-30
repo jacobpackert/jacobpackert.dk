@@ -1,14 +1,13 @@
 ---
 import "../styles/global.css";
 
-import Footer from '../components/Footer.astro';
+import Footer from "../components/Footer.astro";
 
 type Props = {
   title: string;
 };
 
 const { title } = Astro.props;
-
 ---
 
 <html lang="en">
@@ -31,11 +30,11 @@ const { title } = Astro.props;
       media="(prefers-color-scheme: dark)"
     />
     <title>{title}</title>
-
   </head>
   <body>
-    <slot />
+    <main>
+      <slot />
+    </main>
     <Footer />
   </body>
-
 </html>
