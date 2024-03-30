@@ -44,13 +44,13 @@ const sortedBlogPosts = allBlogPosts.sort((a, b) => {
   {
     sortedBlogPosts.map((blogPost) => (
       <div class="blog-post-teaser">
-        <a href={`${blogPost.slug}`} class="headline-link">
+        <a href={`${blogPost.slug}`} data-astro-prefetch class="headline-link">
         <h2>{blogPost.data.title}</h2>
       </a>
         <span>{blogPost.data.date}</span>
         <p>{blogPost.data.description}</p>
       
-      <a href={`${blogPost.slug}`} class="read-more-link">Read →</a>
+      <a href={`${blogPost.slug}`} data-astro-prefetch class="read-more-link">Read →</a>
       </div>
     ))
   }</BaseLayout
