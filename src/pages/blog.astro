@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+const allBlogPosts = await getCollection("blog");
+
+const sortedBlogPosts = allBlogPosts.sort((a, b) => {
+  return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+});
+---
+
+<style>
+  .blog-post-teaser {
+    margin-bottom: 2rem;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    span {
+      font-size: 0.8rem;
+    }
+
+    .headline-link {
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .read-more-link {
+      margin-top: 0;
+      font-size: 0.8rem;
+    }
+  }
+</style>
+
+<BaseLayout title="Blog | Jacob Packert">
+  <h1>Blog</h1>
+  {
+    sortedBlogPosts.map((blogPost) => {
+      const href = `${blogPost.slug}`;
+      return (
+      <div class="blog-post-teaser">
+        <a href={href} data-astro-prefetch class="headline-link">
+        <h2>{blogPost.data.title}</h2>
+      </a>
+        <span>{blogPost.data.date}</span>
+        <p>{blogPost.data.description}</p>
+      
+      <a href={href} data-astro-prefetch class="read-more-link">Read →</a>
+      </div>
+    )})
+  }</BaseLayout
+>
