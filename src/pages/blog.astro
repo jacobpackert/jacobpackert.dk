@@ -42,16 +42,18 @@ const sortedBlogPosts = allBlogPosts.sort((a, b) => {
 <BaseLayout title="Jacob Packert | Blog">
   <h1>Blog</h1>
   {
-    sortedBlogPosts.map((blogPost) => (
+    sortedBlogPosts.map((blogPost) => {
+      const href = `${blogPost.collection}/${blogPost.slug}`;
+      return (
       <div class="blog-post-teaser">
-        <a href={`${blogPost.slug}`} data-astro-prefetch class="headline-link">
+        <a href={href} data-astro-prefetch class="headline-link">
         <h2>{blogPost.data.title}</h2>
       </a>
         <span>{blogPost.data.date}</span>
         <p>{blogPost.data.description}</p>
       
-      <a href={`${blogPost.slug}`} data-astro-prefetch class="read-more-link">Read →</a>
+      <a href={href} data-astro-prefetch class="read-more-link">Read →</a>
       </div>
-    ))
+    )})
   }</BaseLayout
 >
