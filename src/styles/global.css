@@ -131,3 +131,11 @@ article > picture, img {
   height: auto;
   margin: 1rem 0;
 }
+
+.astro-code {
+  border-radius: 4px;
+  padding: 0.5rem;
+  @media screen and (min-width: 600px) {
+    padding: 1rem;
+  }
+}
