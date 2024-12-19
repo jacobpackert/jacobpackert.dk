@@ -1,0 +1,29 @@
+name: pullrequest
+
+on: 
+  pull_request
+
+jobs:
+  checks:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.12.3
+  
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        shell: bash
+        run: pnpm install
+
+      - name: Astro check
+        shell: bash
+        run: pnpm run check
