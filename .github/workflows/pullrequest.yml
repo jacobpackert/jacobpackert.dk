@@ -29,3 +29,4 @@ jobs:
       - name: Astro check
         shell: bash
         run: pnpm run check
+          
