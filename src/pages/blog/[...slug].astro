@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
 
 import { getCollection } from "astro:content";
 
@@ -19,6 +20,7 @@ const { Content } = await entry.render();
 ---
 
 <BaseLayout title={`${entry.data.title} | Jacob Packert`}>
+  <Header slot="header" withBlogLink />
   <article>
     <h1>{entry.data.title}</h1>
     <p>{entry.data.date}</p>

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
 import { getCollection } from "astro:content";
 const allBlogPosts = await getCollection("blog");
 
@@ -40,6 +41,7 @@ const sortedBlogPosts = allBlogPosts.sort((a, b) => {
 </style>
 
 <BaseLayout title="Blog | Jacob Packert">
+  <Header slot="header" />
   <h1>Blog</h1>
   {
     sortedBlogPosts.map((blogPost) => {
