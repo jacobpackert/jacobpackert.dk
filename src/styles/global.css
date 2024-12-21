@@ -1,4 +1,6 @@
 :root {
+    color-scheme: light dark;
+
     --cornhusk: #f3d5ad;
     --peach-quartz: #f5b895;
     --peach-quartz-dark: #df9d76;
@@ -110,19 +112,10 @@ h1 {
 }
 
 a {
-  color: #0000ff;
-  
+  color: light-dark(#0000ff, #0babe5);
+
   &:hover {
-    color: #0000ffaa;
-  };
-
-  @media (prefers-color-scheme: dark) {
-
-    color: #0babe5;
-
-    &:hover {
-      color: #0babe5aa;
-    }
+    color: light-dark(#0000ffaa, #0babe5aa);
   };
 }
 
