@@ -1,0 +1,27 @@
+---
+interface Props {
+  withBlogLink?: boolean;
+}
+
+const { withBlogLink } = Astro.props;
+---
+
+<style>
+  header {
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 0.5rem;
+    
+    a {
+      color: currentColor;
+      text-decoration: none;
+
+      &:hover {
+        color: light-dark(#0000ffaa, #0babe5aa);
+      }
+    }
+  }
+</style>
+
+<header>
+  <a href="/">Jacob Packert</a>{withBlogLink ? <span> » <a href="/blog">All blogposts</a></span> : null}
+</header>
