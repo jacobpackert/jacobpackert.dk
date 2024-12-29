@@ -2,6 +2,7 @@
 title: Want to Learn Something New? Build Silly, Useless Stuff
 date: "2020-01-12"
 description: "You’ll be more motivated to learn if you’re building something a little silly"
+id: 5
 ---
 
 Here’s some advice: Don’t take everything so seriously — so high stakes.

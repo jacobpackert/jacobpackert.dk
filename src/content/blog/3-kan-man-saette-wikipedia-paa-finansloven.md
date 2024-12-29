@@ -2,7 +2,7 @@
 title: Kan man sætte Wikipedia på Finansloven?
 date: "2017-04-16"
 description: "Mulighederne er mange. For relativt få midler, kan vi bidrage mere til noget, der kommer os alle sammen til gode."
-
+id: 3
 ---
 
 Wikipedia er uomtvisteligt noget af det bedste ved internettet. Fra at være noget undervisere advarede mod i folkeskolen og gymnasiet ”fordi alle jo kan gå ind og rette på en side”, er det i dag den mest besøgte portal for viden om alt fra Næstved Storcenter til Panama Papirerne. Wikipedia har forlængst opnået lige så høj nøjagtighed som Encyclopedia Britannica. Og ved aktuelle begivenheder opdateres Wikipedia nærmest realtime af frivillige kræfter, der skriver, redigerer, retter, debatterer og nuancerer indhold.
