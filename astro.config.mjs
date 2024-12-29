@@ -11,5 +11,7 @@ export default defineConfig({
     },
   },
   prefetch: true,
-  adapter: netlify(),
+  adapter: netlify({
+    imageCDN: false,
+  }),
 });
