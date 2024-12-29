@@ -2,6 +2,7 @@
 title: Why bicycling in Copenhagen is so fantastic
 date: "2013-09-04"
 description: "On the virtues of Copenhagen’s favorite mode of transportation"
+id: 1
 ---
 
 There are few greater feelings of freedom and of joy than to cycle the streets of Copenhagen.
