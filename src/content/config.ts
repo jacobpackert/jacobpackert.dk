@@ -5,6 +5,7 @@ const blogSchema =
     title: z.string(),
     date: z.string(),
     description: z.string(),
+    id: z.number().int(),
   });
 
 // Define collection and schema validation for blog
