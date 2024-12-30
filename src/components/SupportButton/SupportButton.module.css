@@ -1,0 +1,20 @@
+.wrapper {
+  margin-top: 2rem;
+}
+
+.button {
+  font-size: 2rem;
+  background-color: light-dark(var(--peach-quartz), var(--moonlit-asteroid-dark));
+  border: none;
+  outline: 1px solid light-dark(var(--cornhusk), var(--nightsky-dark));
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, outline 0.3s;
+  
+
+  &:hover {
+    background-color: light-dark(var(--peach-quartz-dark), var(--moonlit-asteroid));
+    box-shadow: 0 2px 4px light-dark(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+  }
+}

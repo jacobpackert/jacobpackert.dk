@@ -2,15 +2,22 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Header from "../../components/Header.astro";
 
+import { SupportButton } from "../../components/SupportButton";
+
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
 
-  const paths = blogEntries.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }));
+  const paths = blogEntries.map((entry) => {
+    
+    const trimmedSlug = entry.slug.split('-').slice(1).join('-');
+    
+    return {
+      params: { slug: trimmedSlug },
+      props: { entry },
+    }
+});
 
   return paths;
 }
@@ -26,5 +33,6 @@ const { Content } = await entry.render();
     <p>{entry.data.date}</p>
     <h3>{entry.data.description}</h3>
     <Content />
+    <SupportButton id={entry.data.id} client:visible />
   </article>
 </BaseLayout>

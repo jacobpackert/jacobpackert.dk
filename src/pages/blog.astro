@@ -45,7 +45,7 @@ const sortedBlogPosts = allBlogPosts.sort((a, b) => {
   <h1>Blog</h1>
   {
     sortedBlogPosts.map((blogPost) => {
-      const href = `${blogPost.slug}`;
+      const href = `${blogPost.slug.split('-').slice(1).join('-')}`;
       return (
       <div class="blog-post-teaser">
         <a href={href} data-astro-prefetch class="headline-link">
