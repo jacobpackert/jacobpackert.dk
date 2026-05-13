@@ -3,6 +3,7 @@ title: You should probably learn to code. Here is how I (kind of) did.
 date: "2017-04-08"
 description: "Learning to code has been the best investment, I’ve made in myself."
 id: 2
+slug: you-should-probably-learn-to-code-here-is-how-i-kind-of-did
 ---
 
 I started out with Codecademy to learn basic syntax. The last couple of years I’ve been using Codeschool.com, which offers far more advanced material and gives you a deeper understanding for solving problems with code.
