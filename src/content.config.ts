@@ -9,7 +9,7 @@ const blogSchema =
     date: z.string(),
     description: z.string(),
     id: z.number().int(),
-    slug: z.string().optional(),
+    slug: z.string(),
   });
 
 // Define collection and schema validation for blog
