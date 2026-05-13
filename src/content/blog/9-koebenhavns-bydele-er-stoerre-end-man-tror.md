@@ -3,6 +3,7 @@ title: Københavns bydele er større end man tror
 date: "2026-05-13"
 description: "Lidt om statistik og proportioner"
 id: 9
+slug: koebenhavns-bydele-er-stoerre-end-man-tror
 ---
 
 Der er i dag kommet statistik over, hvor mange personer der bor i hver by i Danmark under overskriften ["Flere bor i Hovedstadsområdet og større byer"](https://www.dst.dk/da/Statistik/udgivelser/NytHtml?cid=54337). 
@@ -97,29 +98,31 @@ Jeg syntes det kunne være sjovt at se, hvordan Københavns bydele ville rangere
 | Aarhus | 264.716 | 305.175 |
 | Odense | 175.245 | 187.522 |
 | Aalborg | 112.194 | 122.285 |
-| **Amager Vest** | 67.517 | 92.300 |
-| **Vesterbro/Kongens Enghave** | 63.463 | 85.072 |
-| **Østerbro** | 76.759 | 82.115 |
-| **Nørrebro** | 79.737 | 79.779 |
+| **⋆Amager Vest** | **67.517** | **92.300** |
+| **⋆Vesterbro/Kongens Enghave** | **63.463** | **85.072** |
+| **⋆Østerbro** | **76.759** | **82.115** |
+| **⋆Nørrebro** | **79.737** | **79.779** |
 | Esbjerg | 72.151 | 71.297 |
-| **Valby** | 53.126 | 66.321 |
+| **⋆Valby** | **53.126** | **66.321** |
 | Horsens | 57.517 | 64.893 |
 | Randers | 62.342 | 64.674 |
-| **Amager Øst** | 56.240 | 64.254 |
+| **⋆Amager Øst** | **56.240** | **64.254** |
 | Kolding | 59.712 | 62.670 |
 | Vejle | 54.862 | 62.085 |
-| **Indre By** | 54.061 | 58.224 |
-| **Bispebjerg** | 54.817 | 55.985 |
+| **⋆Indre By** | **54.061** | **58.224** |
+| **⋆Bispebjerg** | **54.817** | **55.985** |
 | Roskilde | 50.046 | 53.897 |
 | Silkeborg | 43.885 | 52.820 |
 | Herning | 48.531 | 52.079 |
 | Hørsholm | 47.000 | 48.797 |
 | Helsingør | 46.829 | 48.395 |
 | Næstved | 42.979 | 45.510 |
-| **Brønshøj-Husum** | 44.420 | 44.975 |
+| **⋆Brønshøj-Husum** | **44.420** | **44.975** |
 | Viborg | 39.856 | 42.988 |
 | Fredericia | 40.248 | 41.743 |
-| **Vanløse** | 40.435 | 40.847 |
+| **⋆Vanløse** | **40.435** | **40.847** |
 | Køge | 36.831 | 38.840 |
 | Taastrup | 33.971 | 38.328 |
 | Holstebro | 35.392 | 37.306 |
+
+⋆ Københavnske bydele
