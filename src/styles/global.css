@@ -1,19 +1,19 @@
 :root {
-    color-scheme: light dark;
+  color-scheme: light dark;
 
-    --cornhusk: #f3d5ad;
-    --peach-quartz: #f5b895;
-    --peach-quartz-dark: #df9d76;
+  --cornhusk: #f3d5ad;
+  --peach-quartz: #f5b895;
+  --peach-quartz-dark: #df9d76;
 
-    --nightsky-dark: #2C5364;
-    --nightsky-dark-transparent: #2C5364aa;
+  --nightsky-dark: #2C5364;
+  --nightsky-dark-transparent: #2C5364aa;
 
-    --moonlit-asteroid: #203A43;
-    --moonlit-asteroid-dark: #0F2027;
-    --moonlit-asteroid-dark-transparent: #0f202744;
+  --moonlit-asteroid: #203A43;
+  --moonlit-asteroid-dark: #0F2027;
+  --moonlit-asteroid-dark-transparent: #0f202744;
 
-    --white: #f3f3f3;
-    --black-transparent: #00000044;
+  --white: #f3f3f3;
+  --black-transparent: #00000044;
 }
 
 @font-face {
@@ -53,27 +53,28 @@ html {
   min-height: 100%;
 
   color: #343434ed;
-  background: linear-gradient(180deg, 
-    var(--cornhusk) 40%,
-    var(--peach-quartz) 80%,
-    var(--peach-quartz-dark) 100%
-  );
+  background: linear-gradient(180deg,
+      var(--cornhusk) 40%,
+      var(--peach-quartz) 80%,
+      var(--peach-quartz-dark) 100%);
 
   @media (prefers-color-scheme: dark) {
 
-  color: #cdcdcdc2;
+    color: #cdcdcdc2;
 
-    background: linear-gradient(180deg, 
-    var(--nightsky-dark) 0%,
-    var(--moonlit-asteroid) 40%,
-    var(--moonlit-asteroid-dark) 80%,
-    black 100%
-  );
+    background: linear-gradient(180deg,
+        var(--nightsky-dark) 0%,
+        var(--moonlit-asteroid) 40%,
+        var(--moonlit-asteroid-dark) 80%,
+        black 100%);
 
-    
-  };
 
-  font-family: 'Inter', sans-serif;
+  }
+
+  ;
+
+  font-family: 'Inter',
+  sans-serif;
   font-weight: 500;
 }
 
@@ -81,16 +82,18 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 95%;
+
   @media screen and (min-width: 600px) {
     max-width: 1000px;
   }
+
   padding: 1rem;
   line-height: 1.5;
 }
 
 footer {
-    font-size: 0.75rem;
-    margin-top: 2rem;
+  font-size: 0.75rem;
+  margin-top: 2rem;
 }
 
 * {
@@ -101,13 +104,16 @@ h1 {
   margin: 1rem 0;
   font-size: 3rem;
   line-height: 3.2rem;
+
   @media screen and (min-width: 600px) {
     font-size: 4rem;
     line-height: 4.2rem;
 
-    
+
   }
-  font-family: 'PlayfairDisplay', serif;
+
+  font-family: 'PlayfairDisplay',
+  serif;
   font-weight: 500;
 }
 
@@ -116,10 +122,13 @@ a {
 
   &:hover {
     color: light-dark(#0000ffaa, #0babe5aa);
-  };
+  }
+
+  ;
 }
 
-article > picture, img {
+article>picture,
+img {
   width: 99%;
   height: auto;
   margin: 1rem 0;
@@ -128,7 +137,23 @@ article > picture, img {
 .astro-code {
   border-radius: 4px;
   padding: 0.5rem;
+
   @media screen and (min-width: 600px) {
     padding: 1rem;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  width: 100%;
+
+  thead {
+    text-align: left;
+    border-bottom: 2px solid currentColor;
+  }
+
+  tbody tr {
+    border-bottom: 1px dotted currentColor;
   }
 }
