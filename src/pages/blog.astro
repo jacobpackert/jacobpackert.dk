@@ -45,17 +45,22 @@ const sortedBlogPosts = allBlogPosts.sort((a, b) => {
   <h1>Blog</h1>
   {
     sortedBlogPosts.map((blogPost) => {
-      const href = `${blogPost.slug.split('-').slice(1).join('-')}`;
+      const href = blogPost.data.slug
+        ? `/blog/${blogPost.data.slug}`
+        : `/blog/${blogPost.id}`;
       return (
-      <div class="blog-post-teaser">
-        <a href={href} data-astro-prefetch class="headline-link">
-        <h2>{blogPost.data.title}</h2>
-      </a>
-        <span>{blogPost.data.date}</span>
-        <p>{blogPost.data.description}</p>
-      
-      <a href={href} data-astro-prefetch class="read-more-link">Read →</a>
-      </div>
-    )})
+        <div class="blog-post-teaser">
+          <a href={href} data-astro-prefetch class="headline-link">
+            <h2>{blogPost.data.title}</h2>
+          </a>
+          <span>{blogPost.data.date}</span>
+          <p>{blogPost.data.description}</p>
+
+          <a href={href} data-astro-prefetch class="read-more-link">
+            Read →
+          </a>
+        </div>
+      );
+    })
   }</BaseLayout
 >
