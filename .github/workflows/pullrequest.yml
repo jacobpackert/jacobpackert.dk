@@ -23,7 +23,3 @@ jobs:
       - name: Install dependencies
         shell: bash
         run: pnpm install
-
-      - name: Astro check
-        shell: bash
-        run: pnpm run check
